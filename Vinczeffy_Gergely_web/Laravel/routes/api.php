@@ -20,5 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 });
 Route::get('/szavak',[SzavakController::class,'OsszesSzavak']);
-Route::get('/szavak/tema',[SzavakController::class,'SzavakTema']);
+Route::get('/szavak/tema/{tema}',[SzavakController::class,'SzavakTema']);
 Route::get('/tema',[SzavakController::class,'OsszesTema']);
